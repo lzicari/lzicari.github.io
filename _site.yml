@@ -13,5 +13,5 @@ navbar:
       href: http://github.com/lzicari/
 output:
   html_document:
-    theme: cerulean
+    theme: darkly
     
