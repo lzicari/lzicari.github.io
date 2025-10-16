@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "plot"
+    - text: "Plot"
       href: plot.html
     - icon: fa-envelope fa-lg
       href: mailto:<lz3015@cumc.columbia.com>

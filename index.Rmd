@@ -17,4 +17,4 @@ check out [this page](plot.html)
 You can embed images 
 Here is a picture of Ted:
 
-![](images/Activity Picture calc.jpg)
+![](images/sddefault.jpg)
