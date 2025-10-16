@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-# This is Jeff's awesome website
+# This is Zic's awesome website
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
@@ -15,6 +15,6 @@ This is an example website from [here](https://p8105.com/making_websites.html) L
 check out [this page](plot.html)
 
 You can embed images 
-Here is a picture of Ted:
+Here is a picture of the UNIVERSE:
 
 ![](images/sddefault.jpg)
