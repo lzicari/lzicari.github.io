@@ -1,0 +1,10 @@
+---
+title: "about this website"
+output: 
+  html_document:
+    theme: cerulean
+---
+
+This website was coded by Lawrence using an Rmarkdown
+
+Go back to the [homepage](index.html)
