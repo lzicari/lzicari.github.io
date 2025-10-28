@@ -1,17 +1,19 @@
-name: "Yay internet!"
+name: "Personal Profile"
 output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Work Experience"
       href: about.html
-    - text: "Plot"
-      href: plot.html
+    - text: "Visualizations"
+      href: visualizations.html
     - icon: fa-envelope fa-lg
       href: mailto:<lz3015@cumc.columbia.com>
     - icon: fa-github fa-lg
       href: http://github.com/lzicari/
+    - icon: fab fa-linkedin fa-lg
+      href: www.linkedin.com/in/lawrence-zicari
 output:
   html_document:
-    theme: darkly
+    theme: lumen
     

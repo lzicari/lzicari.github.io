@@ -1,20 +1,46 @@
 ---
-title: "My awesome website"
+title: "Lawrence Zicari(MPH, B.S) | Epidemiology & Data Analysis"
 output: 
   html_document:
-    toc: true
-    toc_float: true
+    theme: lumen
 ---
 
-# This is Zic's awesome website
+<style>
+  /* This CSS centers your header and image */
+  .center-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* This creates a clean, centered footer */
+  .footer {
+    text-align: center;
+    border-top: 1px solid #eee; /* Faint line */
+    padding-top: 15px;
+    margin-top: 30px;
+  }
+</style>
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+<div class="center-content">
 
-This is an example website from [here](https://p8105.com/making_websites.html) Learn more abuut this site [here](about.html) I can also use [google](https://www.google.com/)
 
-check out [this page](plot.html)
+```{r, echo=FALSE, fig.align='center', out.width="40%"}
+knitr::include_graphics("images/Facetune_13-02-2025-16-34-07.jpeg")
+```
 
-You can embed images 
-Here is a picture of the UNIVERSE:
 
-![](images/sddefault.jpg)
+As a Columbia MPH candidate specializing in Advanced Epidemiology, I have a strong foundation in quantitative methods and public health research. I've demonstrated these skills through various positions but my most recent experience includes working at the NYC Department of Mental Health & Hygiene as a Data Analyst in Emergency Preparedness. I am also a Teaching Assistant for a Master level course in Research Methods and Applications at Columbia University. I am seeking opportunities in Biotech, Health Outcomes and Economics, or Healthcare Consulting where I can apply these skills to initiatives that improve health outcomes on a broad scale. I am especially interested in roles that translate epidemiological insights into practical applications for policy, technology, and healthcare delivery.
+
+Check out my [work experience](about.html) for more details.
+
+
+
+
+<div class="footer">
+<small>
+You can follow me on [LinkdIn](https://www.linkedin.com/in/lawrence-zicari) or check out my [github](http://github.com/lzicari/) to see some of my projects! For further inquires you can email me [here](mailto:lz3015@cumc.columbia.com)
+
+You can view a demonstration of my [visualization skills](visualizations.html) where I constructed simple plots from an Instacart data set.
+</small>
+</div>

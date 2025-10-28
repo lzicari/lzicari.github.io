@@ -1,0 +1,135 @@
+---
+title: "Interactive Visualizations"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: lumen
+---
+Here are some interactive visualizations I have created from an official instacart dataset
+```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(lubridate)
+library(patchwork)
+library(p8105.datasets)
+library(flexdashboard)
+library(plotly)
+library(scales)
+```
+
+```{r load data, include=FALSE}
+data("instacart")
+```
+
+```{r clean, include=FALSE}
+instacart |> 
+  count(aisle, sort = TRUE) |>  
+  slice(1:5)
+```
+
+```{r table, include=FALSE}
+aisle_count = instacart |> 
+    count(aisle) |> 
+    filter(n > 10000)
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Assessing the Most popular Aisles
+
+```{r}
+pop_aisles = ggplot(
+  aisle_count,
+  aes(
+    x = n,
+    y = fct_reorder(aisle, n),
+    text = paste0(
+      "Aisle: ", aisle, "<br>",
+      "Total Orders: ", scales::comma(n)
+    )
+  )
+) +
+  geom_col(fill = "#4E79A7") +
+  labs(title = "Most Popular Aisles by Number of Items Ordered",
+       x = "Number of Items Ordered", y = NULL) +
+  scale_x_continuous(labels = scales::comma) +
+  theme_minimal(base_size = 12)
+
+ggplotly(pop_aisles, tooltip = "text")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Assessing the Most popular Departments
+
+```{r}
+dept_popularity = instacart |> 
+  group_by(department) |> 
+  summarise(total_orders = n()) |> 
+  arrange(desc(total_orders))
+
+pop_departments = ggplot(dept_popularity, aes(x = total_orders, y = fct_reorder(department, total_orders), text = paste0(
+      "department: ", department, "<br>", "Total Orders: ", comma(total_orders)
+))) +
+  geom_col(fill = "#F28E2B") +
+  labs(
+    title = "Most Popular Departments by Number of Items Ordered",
+    x = "Number of Items Ordered",
+    y = NULL
+  ) +
+  scale_x_continuous(labels = comma) + 
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(face = "bold", size = 14))
+
+ggplotly(pop_departments, tooltip = "text")
+```
+
+### Contrasting numbers of orders by day of the week
+
+
+```{r}
+orders_by_day = instacart |> 
+  group_by(order_dow) |> 
+  summarise(total_orders = n()) |> 
+  mutate(day_label = case_when(
+    order_dow == 0 ~ "Sunday",
+    order_dow == 1 ~ "Monday",
+    order_dow == 2 ~ "Tuesday",
+    order_dow == 3 ~ "Wednesday",
+    order_dow == 4 ~ "Thursday",
+    order_dow == 5 ~ "Friday",
+    order_dow == 6 ~ "Saturday"
+  ))
+
+orders_dow_plot <- ggplot(orders_by_day, 
+  aes(
+    x = reorder(day_label, order_dow), 
+    y = total_orders,
+    group = 1  
+  )) +
+
+  geom_line(color = "seagreen") +
+
+  geom_point(color = "seagreen", size = 3, aes(
+      text = paste0(
+        "Day: ", day_label, "<br>", 
+        "Total Orders: ", scales::comma(total_orders)
+      )
+  )) +
+  labs(
+    title = "Number of Orders by Day of the Week",
+    x = "Day of the Week",
+    y = "Number of Orders"
+  ) +
+  scale_y_continuous(labels = scales::comma) +
+  expand_limits(y = 0) +
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(face = "bold", size = 14))
+
+ggplotly(orders_dow_plot, tooltip = "text")
+```
+Go back to the [homepage](index.html)
