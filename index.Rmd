@@ -1,5 +1,5 @@
 ---
-title: "Lawrence Zicari(MPH, B.S) | Epidemiology & Data Analysis"
+title: "Lawrence Zicari (MPH, B.S) | Epidemiology & Data Analysis"
 output: 
   html_document:
     theme: lumen

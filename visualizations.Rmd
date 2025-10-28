@@ -132,4 +132,4 @@ orders_dow_plot <- ggplot(orders_by_day,
 
 ggplotly(orders_dow_plot, tooltip = "text")
 ```
-Go back to the [homepage](index.html)
+
