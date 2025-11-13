@@ -12,7 +12,7 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/lzicari/
     - icon: fab fa-linkedin fa-lg
-      href: www.linkedin.com/in/lawrence-zicari
+      href: https://www.linkedin.com/in/lawrence-zicari/
 output:
   html_document:
     theme: lumen
