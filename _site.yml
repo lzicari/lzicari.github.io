@@ -3,10 +3,8 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "Work Experience"
+    - text: "Experience"
       href: about.html
-    - text: "Visualizations"
-      href: visualizations.html
     - icon: fa-envelope fa-lg
       href: mailto:<lz3015@cumc.columbia.com>
     - icon: fa-github fa-lg

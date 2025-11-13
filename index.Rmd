@@ -32,7 +32,7 @@ knitr::include_graphics("images/Facetune_13-02-2025-16-34-07.jpeg")
 
 As a Columbia MPH candidate specializing in Advanced Epidemiology, I have a strong foundation in quantitative methods and public health research. I've demonstrated these skills through various positions but my most recent experience includes working at the NYC Department of Mental Health & Hygiene as a Data Analyst in Emergency Preparedness. I am also a Teaching Assistant for a Master level course in Research Methods and Applications at Columbia University. I am seeking opportunities in Biotech, Health Outcomes and Economics, or Healthcare Consulting where I can apply these skills to initiatives that improve health outcomes on a broad scale. I am especially interested in roles that translate epidemiological insights into practical applications for policy, technology, and healthcare delivery.
 
-Check out my [work experience](about.html) for more details.
+Check out my [experience](about.html) for more details.
 
 
 
@@ -41,6 +41,5 @@ Check out my [work experience](about.html) for more details.
 <small>
 You can follow me on [LinkdIn](https://www.linkedin.com/in/lawrence-zicari) or check out my [github](http://github.com/lzicari/) to see some of my projects! For further inquires you can email me [here](mailto:lz3015@cumc.columbia.com)
 
-You can view a demonstration of my [visualization skills](visualizations.html) where I constructed simple plots from an Instacart data set.
 </small>
 </div>
