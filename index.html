@@ -248,10 +248,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">Work Experience</a>
-</li>
-<li>
-  <a href="visualizations.html">Visualizations</a>
+  <a href="about.html">Experience</a>
 </li>
 <li>
   <a href="mailto:&lt;lz3015@cumc.columbia.com&gt;">
@@ -287,23 +284,67 @@ $(document).ready(function () {
 
 
 <style>
-  /* This CSS centers your header and image */
+  /* Place ALL the CSS from the sections above into this style block */
   .center-content {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   
-  /* This creates a clean, centered footer */
   .footer {
     text-align: center;
-    border-top: 1px solid #eee; /* Faint line */
+    border-top: 1px solid #eee;
     padding-top: 15px;
     margin-top: 30px;
   }
+  
+  /* --- New Text Styling --- */
+  body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .intro-text {
+    max-width: 700px;
+    margin: 20px auto 40px auto;
+    text-align: justify; 
+  }
+
+  h1 { /* This targets the YAML title */
+    color: #004d99;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  h2 { /* Added for sub-headings, if you use them */
+    color: #007bff;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+  }
+  
+  .footer small {
+    font-size: 13px;
+    color: #666;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
 </style>
 <div class="center-content">
-<p><img src="images/Facetune_13-02-2025-16-34-07.jpeg" width="40%" style="display: block; margin: auto;" /></p>
+<p><img src="images/Facetune_13-02-2025-16-34-07.jpeg" width="25%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="intro-text">
 <p>As a Columbia MPH candidate specializing in Advanced Epidemiology, I
 have a strong foundation in quantitative methods and public health
 research. I’ve demonstrated these skills through various positions but
@@ -316,18 +357,16 @@ Consulting where I can apply these skills to initiatives that improve
 health outcomes on a broad scale. I am especially interested in roles
 that translate epidemiological insights into practical applications for
 policy, technology, and healthcare delivery.</p>
-<p>Check out my <a href="about.html">work experience</a> for more
+<p>Check out my <a href="about.html">experience</a> for more
 details.</p>
+</div>
 <div class="footer">
 <p><small> You can follow me on <a
 href="https://www.linkedin.com/in/lawrence-zicari">LinkdIn</a> or check
 out my <a href="http://github.com/lzicari/">github</a> to see some of my
 projects! For further inquires you can email me <a
 href="mailto:lz3015@cumc.columbia.com">here</a></p>
-<p>You can view a demonstration of my <a
-href="visualizations.html">visualization skills</a> where I constructed
-simple plots from an Instacart data set. </small></p>
-</div>
+<p></small></p>
 </div>
 
 
